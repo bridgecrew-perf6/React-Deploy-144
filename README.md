@@ -1,3 +1,26 @@
+# install gh-pages
+
+npm install gh-pages --save-dev
+
+# add homepage to package.json
+
+"homepage": "https://stx666.github.io/React-Deploy"
+
+#  add the predeploy and deploy to scripts
+
+  "scripts": {
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+
+  # deploy to github pages, for that run in terminal 
+
+  npm run deploy
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
